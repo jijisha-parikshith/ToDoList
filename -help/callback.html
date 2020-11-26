@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ Hi all
+ Call back function explanation:::<be><br></be> 
+<script>
+ function add(num1,num2,callback){
+  var addVar= num1+num2;
+  callback(addVar,2);
+}
+function subtract(addVar,c){
+var sub=addVar-c;
+document.write(`the result is ${addVar}-${c}=${sub}`);
+}
+
+add(2,3,subtract);
+</script>
+</body>
+</html>
